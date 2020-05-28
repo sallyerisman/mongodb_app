@@ -1,5 +1,7 @@
 /* MOVIE CONTROLLER */
 
+const models = require("../models");
+
 /* Get all movies */
 const index = (req, res) => {
 	res.status(405).send({
