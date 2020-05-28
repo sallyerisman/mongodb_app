@@ -15,9 +15,11 @@ db.once('open', function() {
 });
 
 // Set up the models we want to use in our app
-
+const models = {};
+models.Movie = require("./movie");
 
 // Export
 module.exports = {
-
+	mongoose,
+	...models,
 }
